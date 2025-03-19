@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+        
+    .box-1, .box-2 {
+      max-width: 375px;
+      height: 350px;
+      padding: 20px;
+      margin: 20px auto;
+      background-color:hsl(213, 19%, 18%);
+     border-radius: 20px;
+     margin-bottom: 30px;
+   
+    }
+ 
+    @media screen and (max-width: 601px) {
+      .box-1, .box-2{
+        width: 100%;
+        padding: 10px 0px;
+      }
+    }
+
+   .box-1 img{
+     margin-left: 10%;
+     width: 5%;
+     height: 5%;
+     box-shadow: 0 -5px 10px rgba( 0, 0, 0, 0.2);
+     border-radius: 50%;
+     background-color: hsl(213, 19%, 18%);
+    }
+
+    h1 {
+      color: hsl(0, 0%, 100%); 
+      font-family: Overpass;
+      font-weight: 700;
+      margin-left: 20px;
+    }
+
+    .box-1 p{
+      line-height: 1.5;
+     color: hsl(0, 0%, 100%);
+     font-size: 15px;
+     font-family: Overpass,sans-serif;
+     margin-left: 20px;
+    }
+
+   .box-1 h2{
+   background-color: hsl(25, 97%, 53%);
+   margin: 20px 20px;
+   padding: 10px 20px;
+   font-size: 20px;
+   border-radius: 20px;
+   text-align: center;
+    }
+
+    .box-1 h3{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      padding: 20px;
+      
+    
+    }
+
+    .circle{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      box-shadow: 0 -5px 10px rgba( 0, 0, 0, 0.2);
+      background-color: hsl(213, 19%, 18%);
+      font-size: 18px;
+      font-weight: bold;
+      color: hsl(0, 0%, 100%);
+      cursor: pointer;
+    }
+
+    .circle[data-value="4"] {
+   color: hsl(0, 0%, 100%) !important;
+  background-color:bisque
+
+    }
+
+    .circle[data-value="4"]:hover {
+      background-color: hsl(0, 0%, 100%) !important;;
+    }
+
+    .circle:hover {
+    background-color: hsl(25, 79%, 53%);
+
+  }
+   
+    .circle {
+      color: white;
+    }
+
+    .box-2 img{
+      padding-top: 10px;
+     margin-left: 25%;
+     margin-bottom: 10px;
+    }
+
+    .box-2 h3{
+   color: hsl(25, 97%, 53%);
+   padding: 5px 5px;
+   font-size: 18px;
+   box-shadow: 0 -5px 10px rgba( 0, 0, 0, 0.2);
+   border-radius: 20px;
+   text-align: center;
+   margin-bottom: 10px;
+    }
+
+    h2{
+      color: hsl(0, 0%, 100%); 
+      font-family: Overpass,sans-serif;
+      text-align: center;
+       font-weight: 700;
+    }
+
+     p{
+      line-height: 1.5;
+     color: hsl(0, 0%, 100%);
+     font-size: 15px;
+     font-family: Overpass,sans-serif;
+     font-weight: 700;
+     margin-left: 30px;
+     }
+     
+
+
+  </style>
+</head>
+<body>
+
+  
+     <section class="box-1">
+      <img  src="./images/icon-star.svg" alt="icon-star">
+  <h1>How did we do?</h1>
+
+  <p>Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
+
+  <h3>
+    <button class="circle" data-value="1">1</button>
+    <button class="circle" data-value="2">2</button>
+    <button class="circle" data-value="3">3</button>
+    <button class="circle" data-value="4">4</button>
+    <button class="circle" data-value="5">5</button>
+  </h3>
+
+  <h2>Submit</h2>
+  </section>
+
+
+
+  <section class="box-2">
+    <img src="./images/illustration-thank-you.svg" alt="illustration-thank-you">
+  <h3>You selected 4 out of 5</h3>
+
+  <h2>Thank you!</h2>
+
+  <p>We appreciate you taking the time to give a<br>rating. If you ever need more support, 
+  don’t <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hesitate to get in touch!</p>
+</section>
+
+ 
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">janechizzy</a>.
+  </div>
+</body>
+</html>
